@@ -1,0 +1,20 @@
+// Constants
+
+max_image_id = 59;
+
+for (i = 0; i < max_image_id; i++)
+    frames[i] = Image(i + ".png");
+
+current_frame = Sprite();
+
+
+// Animation
+
+ticks = 0;
+fun refresh_callback()
+{
+    current_frame.SetImage(frames[ticks % max_image_id]);
+    ticks++;
+}
+
+Plymouth.SetRefreshFunction(refresh_callback);

@@ -1,0 +1,20 @@
+[Plymouth Theme]
+Name=framework
+Description=A rotating Framework logo
+ModuleName=script
+
+[script]
+ImageDir=/usr/share/plymouth/themes/framework
+ScriptFile=/usr/share/plymouth/themes/framework/framework.script
+ProgressBarBackgroundColor=#eff1f5
+ProgressBarForegroundColor=#8839ef
+MessageBelowAnimation=true
+
+[boot-up]
+UseEndAnimation=false
+
+[shutdown]
+UseEndAnimation=false
+
+[reboot]
+UseEndAnimation=false
